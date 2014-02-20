@@ -11,12 +11,13 @@
 // There is no "window.addEventListener('load', ...)" wrapper because chromium sucks.
 var styles = {
     'moz-svc-dev': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, blue 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
-    'moz-svc-prod': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, red 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
-    'mozilla': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, green 0px, #222 100%) repeat scroll 0% 0% transparent !important; }'
+    'mozilla': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, green 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
+    'moz-aws-dev': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, orange 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
+    'moz-aws-prod': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, red 0px, #222 100%) repeat scroll 0% 0% transparent !important; }'
 };
 function setStyle() {
     var iam = document.querySelector('#nav-usernameMenu > div.nav-elt-label');
-    // console.log(iam);
+    console.log(iam);
     if (iam) {
         iam = iam.innerHTML.split(' @ ') [1];
         var style = styles[iam];
