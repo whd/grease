@@ -5,14 +5,14 @@
 // @include     https://console.aws.amazon.com/*/home*
 // @include     https://*.console.aws.amazon.com/GetResource/Console.html*
 // @exclude     https://console.aws.amazon.com/s3/home*
-// @version     2014.2.25
+// @version     2014.8.25
 // @grant       GM_addStyle
 // ==/UserScript==
 // There is no "window.addEventListener('load', ...)" wrapper because chromium sucks.
 var styles = {
     'moz-svc-dev': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, blue 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
     'mozilla': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, green 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
-    'moz-aws-dev': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, orange 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
+    'cloudservices-aws-dev': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, orange 0px, #222 100%) repeat scroll 0% 0% transparent !important; }',
     'moz-svc-prod': 'body #awsgnav #nav-menubar, body #awsgnav #nav-menubar .nav-menu { background: linear-gradient(to bottom, red 0px, #222 100%) repeat scroll 0% 0% transparent !important; }'
 };
 function setStyle() {
