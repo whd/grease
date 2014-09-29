@@ -3,9 +3,10 @@
 // @description Color your AWS experience based on the IAM you are in.
 // @downloadURL https://people.mozilla.org/~wdawson/aws_iam_color.user.js
 // @include     https://console.aws.amazon.com/*/home*
+// @include     https://*.console.aws.amazon.com/*/home*
 // @include     https://*.console.aws.amazon.com/GetResource/Console.html*
 // @exclude     https://console.aws.amazon.com/s3/home*
-// @version     2014.8.25
+// @version     2014.9.28
 // @grant       GM_addStyle
 // ==/UserScript==
 // There is no "window.addEventListener('load', ...)" wrapper because chromium sucks.
